@@ -17,4 +17,10 @@ public class ExchangeConfiguration {
     public FanoutExchange mailExchange(@Value("${rabbitmq.mail.exchange}") String mailExchange) {
         return new FanoutExchange(mailExchange, DURABLE, AUTO_DELETE);
     }
+
+    @Bean
+    @Qualifier("fetchMailExchange")
+    public FanoutExchange fetchMailExchange(@Value("${rabbitmq.fetchmail.exchange}") String fetchMailExchange) {
+        return new FanoutExchange(fetchMailExchange, DURABLE, AUTO_DELETE);
+    }
 }
