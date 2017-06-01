@@ -20,10 +20,14 @@ import java.util.stream.Collectors;
 @Service
 public class MailSender {
 
-    @Value("${emailUserName}")
+    @Value("${email.user.name}")
     private String USER_NAME;
-    @Value("${emailUserPassword}")
+    @Value("${email.user.password}")
     private String PASSWORD;
+    @Value("${smtp.server}")
+    private String smtpServer;
+    @Value("${smtp.port}")
+    private String smtpPort;
     private SolidarizeEventsService solidarizeEventsService;
 
     @Autowired
@@ -51,13 +55,13 @@ public class MailSender {
     }
 
     private void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
+        String host = smtpServer;
         Properties props = System.getProperties();
-        String host = "smtp.sendgrid.net";
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", host);
         props.put("mail.smtp.user", from);
         props.put("mail.smtp.password", pass);
-        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.port", smtpPort);
         props.put("mail.smtp.auth", "true");
 
         Session session = Session.getDefaultInstance(props);
