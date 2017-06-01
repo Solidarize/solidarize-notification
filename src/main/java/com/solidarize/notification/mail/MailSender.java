@@ -52,7 +52,7 @@ public class MailSender {
 
     private void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
         Properties props = System.getProperties();
-        String host = "smtp.gmail.com";
+        String host = "smtp.sendgrid.net";
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", host);
         props.put("mail.smtp.user", from);
