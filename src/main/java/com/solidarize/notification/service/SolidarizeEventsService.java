@@ -39,7 +39,7 @@ public class SolidarizeEventsService {
     }
 
     public List<SolidarizeEvent> getLatestEvents() {
-        return repository.findAllByOrderByTimestamp().get(0).getSolidarizeEvents();
+        return repository.findAllByOrderByTimestampDesc().get(0).getSolidarizeEvents();
     }
 
     static class FetchMailDTO {

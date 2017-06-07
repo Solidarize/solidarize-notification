@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>[SUBJECT]</title>
+  <style type="text/css">
+    body{padding-top: 0 !important;padding-bottom: 0 !important;padding-top: 0 !important;padding-bottom: 0 !important;margin:0 !important;width: 100% !important;-webkit-text-size-adjust: 100% !important;-ms-text-size-adjust: 100% !important;-webkit-font-smoothing: antialiased !important;}
+    .tableContent img{border: 0 !important;display: block !important;outline: none !important;}
+    div,p,ul,h2,h2{margin:0;}
+    h2.big,h2.big{font-size: 21px;font-weight: normal;}
+    .h2-destaques{color: #fff;font-size: 2.25em;line-height: 1;text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);margin-bottom: 0px;}
+    a.link1{color:#62A9D2;font-size:13px;font-weight:bold;text-decoration:none;}
+    .bgBody{background: #F6F6F6;}
+    .bgItem{background: #ffffff;}
+    @media only screen and (max-width:480px){
+      table[class="MainContainer"], td[class="cell"]{width: 100% !important;height:auto !important; }
+      td[class="specbundle"]{width: 100% !important;float:left !important;font-size:13px !important;line-height:17px !important;display:block !important;}
+      td[class="specbundle1"] {width: 100% !important;float:left !important;font-size:13px !important;line-height:17px !important;display:block !important;padding-bottom:20px !important;}	
+      td[class="specbundle2"] {width:90% !important;float:left !important;font-size:14px !important;line-height:18px !important;display:block !important;padding-left:5% !important;padding-right:5% !important;}
+      td[class="specbundle3"] {width:90% !important;float:left !important;font-size:14px !important;line-height:18px !important;display:block !important;padding-left:5% !important;padding-right:5% !important;padding-bottom:20px !important;text-align:center !important;}
+    	td[class="specbundle4"]{width: 100% !important;float:left !important;font-size:13px !important;line-height:17px !important;display:block !important;padding-bottom:20px !important;text-align:center !important;}
+      td[class="spechide"] {display:none !important;}
+      img[class="banner"]{width: 100% !important;height: auto !important;}
+      td[class="left_pad"] {padding-left:15px !important;padding-right:15px !important;}
+    }  	
+    @media only screen and (max-width:540px){ 		
+      table[class="MainContainer"], td[class="cell"]{width: 100% !important;height:auto !important; }
+      td[class="specbundle"]{width: 100% !important;float:left !important;font-size:13px !important;line-height:17px !important;display:block !important;}
+    	td[class="specbundle1"] {width: 100% !important;float:left !important;font-size:13px !important;line-height:17px !important;display:block !important;padding-bottom:20px !important;}		
+      td[class="specbundle2"]{width:90% !important;float:left !important;font-size:14px !important;line-height:18px !important;display:block !important;padding-left:5% !important;padding-right:5% !important;}
+    	td[class="specbundle3"]{width:90% !important;float:left !important;font-size:14px !important;line-height:18px !important;display:block !important;padding-left:5% !important;padding-right:5% !important;padding-bottom:20px !important;text-align:center !important;}
+    	td[class="specbundle4"]{width: 100% !important;float:left !important;font-size:13px !important;line-height:17px !important;display:block !important;padding-bottom:20px !important;text-align:center !important;} 		
+      td[class="spechide"]{display:none !important;}
+    	img[class="banner"]{width: 100% !important;height: auto !important;}
+    	td[class="left_pad"]{padding-left:15px !important;padding-right:15px !important;}
+    	.font{font-size:15px !important;line-height:19px !important;}
+    }
+  </style>
+  <script type="colorScheme" class="swatch active">
+    {"name":"Default","bgBody":"F6F6F6","link":"62A9D2","color":"999999","bgItem":"ffffff","title":"555555"}
+  </script>
+</head>
+<body paddingwidth="0" paddingheight="0" offset="0" toppadding="0" leftpadding="0" style="padding-top:0;padding-bottom:0;background-repeat:repeat;width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased;margin-left:5px; margin-right:5px;margin-top:0px;margin-bottom:0px;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableContent bgBody" align="center"  style='font-family:helvetica, sans-serif;'>
+  
+    <!--  =========================== The header ===========================  -->   
+    
+  <tbody>
+    <tr>
+      <td height='25' bgcolor='#4fafc2' colspan='3'></td>
+    </tr>
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td valign="top" class="spechide">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr><td height='130' bgcolor='#4fafc2'>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                  </tbody>
+                </table>
+              </td>
+              <td valign="top" width="600">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="MainContainer" bgcolor="#ffffff">
+                  <tbody>
+   <!--  =========================== The body ===========================  -->   
+                    <tr><td class='movableContentContainer'>
+      		            <div class="movableContent" style="border:0px;padding-top:0px;position:relative;">
+            	           <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                          <tr><td bgcolor='#4fafc2' valign='top'>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                          <tr><td align='left' valign='middle' >
+                            <div class="contentEditableContainer contentImageEditable">
+                              <div class="contentEditable" >
+                                <h2 class="h2-destaques">Solidarize</h2>
+                              </div>
+                            </div>
+                          </td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+            </div>
+            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                  <tr><td height='25' bgcolor='#4fafc2'><p style="color:#ffffff">Todos juntos em busca de um mundo melhor!</p></td></tr>
+                <tr><td height='5' bgcolor='#3e6d92'></td></tr>
+                <tr><td height='40' class='bgItem'></td></tr>
+                <tr>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top' class='bgItem'>
+                      <tr>
+                        <td width='70'></td>
+                        <td align='center' width='530'>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class="contentEditable" style='font-size:32px;color:#555555;font-weight:normal;'>
+                              <h2 style='font-size:32px;'>Novidades para você</h2>
+                            </div>
+                          </div>
+                        </td>
+                        <td  width='70'></td>
+                      </tr>
+                      <tr><td colspan='3' height='22' ></td></tr>
+                      <tr>
+                        <td width='70'></td>
+                        <td  align='center' width='530'>
+                          <div class='contentEditableContainer contentTextEditable'>
+                            <div class="contentEditable" style='font-size:13px;color:#99A1A6;line-height:19px;'>
+                              <p >Estamos te trazendo algumas novidades do nosso site e acreditamos que você possa se interessar por elas.</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td  width='70'></td>
+                      </tr>
+                      <tr><td colspan='3' height='45' ></td></tr>
+                    </table>
+                  </td>
+                </tr>
+                </table>
+            </div>
+            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                  <tr><td height='10' bgcolor='#3e6d92'></td></tr>
+                    <tr>
+                      <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top' bgcolor='#3e6d92'>
+                          <tr>
+                            <td width='25'></td>
+                            <td width='475' valign='middle'>
+                              <div class='contentEditableContainer contentTextEditable'>
+                                <div class="contentEditable" style='font-family:Georgia;font-style:italic;font-size:15px;line-height:19px;'>
+                                  <p style='color:#fff;'>Acesse nossas mídeas!</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td width='45' valign='top'>
+                              <div class='contentEditableContainer contentFacebookEditable'>
+                                <div class="contentEditable">
+                                  <img src="data:image/png;base64,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" alt='facebook' data-default="placeholder" data-customIcon="true" data-max-width='45' width='45' height='45' >
+                                </div>
+                              </div>
+                            </td>
+                            <td width='10'></td>
+                            <td width='45' valign='top'>
+                              <div class='contentEditableContainer contentTwitterEditable'>
+                                <div class="contentEditable">
+                                  <img src="data:image/png;base64,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" alt='Twitter' data-default="placeholder" data-customIcon="true" data-max-width='45' width='45' height='45' >
+                                </div>
+                              </div>  
+                            </td>
+                            <td width='10'></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr><td height='10' bgcolor='#3e6d92'></td></tr>
+                </table>
+            </div>
+            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                        <tr><td height='20'></td></tr>
+                      </table>
+            </div>
+            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                <tr>
+                  <td>
+                    <div class='contentEditableContainer contentImageEditable'>
+                      <div class="contentEditable">
+                        <img class="banner" src="cid:evento.jpg" alt='Evento' data-default="placeholder" data-max-width="600" width='600' height='180' >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr><td height='10' bgcolor='#3e6d92'></td></tr>
+                <tr>
+                  <td bgcolor='#3e6d92' style='padding:8px 0;'>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="20" class="spechide">&nbsp;</td>
+      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align='left' valign='top' width='370' class="specbundle3">
+                                  <div class='contentEditableContainer contentTextEditable'>
+                                    <div class="contentEditable" style='color:#ffffff;font-size:21px;line-height:19px;'>
+                                      <p><span class="font" th:text="${event1Title}"></p>
+                                      <p style="font-size:0.75em" th:text="${event1Data}"></p>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td width='20' class="specbundle2"></td>
+                                <td class="specbundle2" align='center' valign='middle' width='180'>
+                                  <div class='contentEditableContainer contentTextEditable'>
+                                    <div class="contentEditable">
+                                      <a target='_blank' class='link3' href="#" style='background:#62A9D2; color:#ffffff; padding:8px 10px;text-decoration:none;font-size:13px;'>Leia mais</a>
+                                    </div>
+                                  </div>
+                                </td>
+    </tr>
+  </tbody>
+</table>
+</td>
+      <td width="20" class="spechide">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+                          </td>
+                        </tr>
+                        <tr><td height='10' bgcolor='#3e6d92'></td></tr>
+                      </table>
+            </div>
+            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                        <tr><td height='20'></td></tr>
+                      </table>
+            </div>
+            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                        <tr>
+                          <td width='291' class="specbundle2" valign='top'>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                              <tr><td height='15' colspan='3'></td></tr>
+
+                              <tr>
+                                <td width='20'></td>
+                                <td width='251'>
+                                  <table width="251" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                                    <tr>
+                                      <td>
+                                        <div class='contentEditableContainer contentTextEditable'>
+                                          <div class='contentEditable' style='color:#555555;font-size:21px;font-weight:normal;'>
+                                            <h2 class='big' th:text="${event2Title}"></h2>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr><td height='16'></td></tr>
+                                    <tr>
+                                      <td>
+                                        <div class='contentEditableContainer contentTextEditable'>
+                                          <div class='contentEditable' style='color:#999999;font-size:13px;line-height:19px;'>
+                                            <p th:text="${event2Description}"></p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr><td height='16'></td></tr>
+                                    <tr>
+                                      <td>
+                                        <div class='contentEditableContainer contentTextEditable'>
+                                          <div class='contentEditable'>
+                                            <a target='_blank' class='link1' href="#" >Leia mais</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width='20'></td>
+                              </tr>
+
+                              <tr><td height='15' colspan='3'></td></tr>
+                            </table>
+                          </td>
+
+                          <td width='18' valign="top" class="specbundle2">&nbsp;</td>
+                          
+                          <td width='291' class="specbundle2" valign='top'>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                              <tr><td height='15' colspan='3'></td></tr>
+
+                              <tr>
+                                <td width='20'></td>
+                                <td width='251'>
+                                  <table width="251" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                                    <tr>
+                                      <td>
+                                        <div class='contentEditableContainer contentTextEditable'>
+                                          <div class='contentEditable' style='color:#555555;font-size:21px;font-weight:normal;'>
+                                            <h2 class='big'th:text="${event3Title}"></h2>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr><td height='16'></td></tr>
+                                    <tr>
+                                      <td>
+                                        <div class='contentEditableContainer contentTextEditable'>
+                                          <div class='contentEditable' style='color:#999999;font-size:13px;line-height:19px;'>
+                                            <p th:text="${event3Description}"></p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr><td height='16'></td></tr>
+                                    <tr>
+                                      <td>
+                                        <div class='contentEditableContainer contentTextEditable'>
+                                          <div class='contentEditable'>
+                                            <a target='_blank' class='link1' href="#" >Leia mais</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                                <td width='20'></td>
+                              </tr>
+
+                              <tr><td height='15' colspan='3'></td></tr>
+                            </table>
+                          </td>
+                        </tr>
+                        
+                      </table>
+            </div>
+            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                        <tr><td height='20'> </td></tr>
+                      </table>
+            </div>
+            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top'>
+                        <tr><td colspan='3' height='16'>&nbsp;</td></tr>
+                        <tr>
+                          <td width='16' class="spechide">&nbsp;</td>
+                          <td width="568" class="specbundle2">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top' >
+                              <tr>
+                                <td align='left' valign='top'>
+                                  <div class="contentEditableContainer contentTextEditable" >
+                                   <div class="contentEditable" style='color:#555555;font-size:21px;font-weight:normal;'>
+                                    <h2 class='big'>Gostaria de mais novidades?</h2>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td height='16'>&nbsp;</td></tr>
+                            <tr>
+                              <td align='left' valign='top'>
+                                <div class="contentEditableContainer contentTextEditable" >
+                                 <div class="contentEditable" style='color:#999999;font-size:13px;line-height:19px;'>
+                                  <p >Então não perca tempo e acesse nosso website agora mesmo!</p>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr><td height='20'>&nbsp;</td></tr>
+                          <tr>
+                            <td align='right' valign='top' style='padding-bottom:8px;'>
+                              <div class="contentEditableContainer contentTextEditable" >
+                               <div class="contentEditable" >
+                                <a target='_blank' class='link2' href="http://solidarize-web-dev.herokuapp.com" style='padding:8px;background:#62A9D2;font-size:13px;color:#ffffff;text-decoration:none;font-weight:bold;'>Ir para o Solidarize →</a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td width='16' class="spechide">&nbsp;</td>
+                  </tr>
+                  <tr><td colspan='3' height='16'>&nbsp;</td></tr>
+                </table>
+            </div>
+            <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign='top' class='bgBody' >
+                  <tr><td height='54' style='border-bottom:1px solid #DAE0E4'>&nbsp;</td></tr>
+
+                  <tr><td height='28'></td></tr>
+
+                  <tr>
+                    <td valign='top' align='center'>
+                      <div class="contentEditableContainer contentTextEditable">
+                        <div class="contentEditable" style='color:#A8B0B6; font-size:13px;line-height: 16px;'>
+                          <p>Este e-mail foi enviado por que você se inscreveu na new do Solidarize. Por favor, adicione-nos aos seus contatos para garantir que os boletins informativos atinjam sua caixa de entrada.
+                          </p>
+                        </div>
+                      </div>
+                      </td>
+                    </tr>
+
+                    <tr><td height='28'></td></tr>
+
+                    <tr>
+                      <td valign='top' align='center'>
+                        <div class="contentEditableContainer contentTextEditable">
+                          <div class="contentEditable" style='color:#A8B0B6; font-weight:bold;font-size:13px;line-height: 30px;'>
+                            <p >Solidarize</p>
+                          </div>
+                        </div>
+                        <div class="contentEditableContainer contentTextEditable">
+                          <div class="contentEditable" style='color:#A8B0B6; font-size:13px;line-height: 15px;'>
+                            <p >Todos juntos em busca de um mundo melhor!</p>
+                          </div>
+                        </div>
+                        <div class="contentEditableContainer contentTextEditable">
+                          <div class="contentEditable" >
+                            <a target='_blank' href='[UNSUBSCRIBE]' style='line-height: 20px;color:#A8B0B6; font-size:13px;'><br/>Parar de receber estes emails</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                </table>
+            </div>
+      
+      </td>
+    </tr>
+  </tbody>
+</table>
+</td>
+      <td valign="top" class="spechide"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td height='130' bgcolor='#4fafc2'>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

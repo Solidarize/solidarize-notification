@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface SolidarizeEventRepository extends MongoRepository<SolidarizeEventsWrapper, Integer> {
-    List<SolidarizeEventsWrapper> findAllByOrderByTimestamp();
+    List<SolidarizeEventsWrapper> findAllByOrderByTimestampDesc();
 }
