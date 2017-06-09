@@ -66,6 +66,8 @@ public class MailSender {
         context.setVariable("event3Title", latestEvents.get(2).getTitle());
         context.setVariable("event3Description", latestEvents.get(2).getDescription());
         context.setVariable("imageResourceName", "evento.jpg");
+        context.setVariable("imageResourceName", "facebook.png");
+        context.setVariable("imageResourceName", "twitter.png");
         return templateEngine.process("email", context);
     }
 
@@ -101,6 +103,14 @@ public class MailSender {
             byte[] image = getImageByte("/evento.jpg");
             if (image != null) {
                 message.addInline("evento.jpg", new ByteArrayResource(image), "image/jpeg");
+            }
+            byte[] imageFacebook = getImageByte("/facebook.png");
+            if (imageFacebook != null) {
+                message.addInline("facebook.png", new ByteArrayResource(imageFacebook), "image/png");
+            }
+            byte[] imageTwitter = getImageByte("/twitter.png");
+            if (imageTwitter != null) {
+                message.addInline("twitter.png", new ByteArrayResource(imageTwitter), "image/png");
             }
 
             Transport transport = session.getTransport("smtp");
